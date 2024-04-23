@@ -1,61 +1,75 @@
+import { StyleSheet, Text, View } from '@react-pdf/renderer';
 import React from 'react';
+
+const styles = StyleSheet.create({
+  section: {
+    paddingTop: '15px',
+    paddingBottom: '15px',
+  },
+  headers: {
+    fontSize: '14px',
+  },
+  paragraphs: {
+    fontSize: '10px',
+  },
+});
 
 export const AdditionalDetails = () => {
   return (
     <>
-      <section class="mb-[50px]">
-        <h3 class="main-titles">Details</h3>
-        <div>
-          <p>
+      <View style={styles.section} class="mb-[50px]">
+        <Text style={styles.headers} class="main-titles">Details</Text>
+        <View>
+          <Text style={styles.paragraphs}>
             Varna
-          </p>
-        </div>
-        <div>
-          <p>
+          </Text>
+        </View>
+        <View>
+          <Text style={styles.paragraphs}>
             Bulgaria
-          </p>
-        </div>
-        <div>
-          <p>
+          </Text>
+        </View>
+        <View>
+          <Text style={styles.paragraphs}>
             0897 865 012
-          </p>
-        </div>
-        <div>
-          <p>
+          </Text>
+        </View>
+        <View>
+          <Text style={styles.paragraphs}>
             krasen.dimitrov.vn@gmail.com
-          </p>
-        </div>
-      </section>
+          </Text>
+        </View>
+      </View>
 
-      <section class="mb-[50px] pr-[20px]">
-        <h3 class="main-titles">Driver license</h3>
-        <div>
-          <p>B</p>
-        </div>
-      </section>
+      <View class="mb-[50px] pr-[20px]">
+        <Text style={styles.headers} class="main-titles">Driver license</Text>
+        <View>
+          <Text style={styles.paragraphs}>B</Text>
+        </View>
+      </View>
 
-      <section class="mb-[50px]">
-        <h3 class="main-titles">Languages</h3>
-        <div>
-          <p>Bulgarian</p>
-        </div>
-        <div>
-          <p>English</p>
-        </div>
-      </section>
+      <View class="mb-[50px]">
+        <Text style={styles.headers} class="main-titles">Languages</Text>
+        <View>
+          <Text style={styles.paragraphs}>Bulgarian</Text>
+        </View>
+        <View>
+          <Text style={styles.paragraphs}>English</Text>
+        </View>
+      </View>
 
-      <section class="mb-[50px]">
-        <h3 class="main-titles">Hobbies</h3>
-        <div>
-          <p>Mountain climbing</p>
-        </div>
-        <div>
-          <p>Music</p>
-        </div>
-        <div>
-          <p>Puzzle games</p>
-        </div>
-      </section>
+      <View class="mb-[50px]">
+        <Text style={styles.headers} class="main-titles">Hobbies</Text>
+        <View>
+          <Text style={styles.paragraphs}>Mountain climbing</Text>
+        </View>
+        <View>
+          <Text style={styles.paragraphs}>Music</Text>
+        </View>
+        <View>
+          <Text style={styles.paragraphs}>Puzzle games</Text>
+        </View>
+      </View>
     </>
   );
 };

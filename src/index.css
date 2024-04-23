@@ -60,8 +60,13 @@ h6 {
   padding-bottom: 15px;
 }
 
+#root {
+  height: 100vh;
+  width: 100vw;
+}
+
 .cv-container .cv-container-right {
-  height: 593.5mm;
+  /* height: 593.5mm; */
   /* height: 250mm; */
   flex: 1;
   background-color: #082A4D;
