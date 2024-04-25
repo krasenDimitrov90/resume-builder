@@ -12,8 +12,8 @@ const styles = StyleSheet.create({
   header: {
     fontSize: '14px',
   },
-  text: {
-    fontSize: '10px',
+  paragraphs: {
+    marginTop: '10px',
   },
 });
 
@@ -21,9 +21,11 @@ export const Profile = ({ info }) => {
   return (
     <View style={styles.view}>
       <Heading variant={'H2'} >Profile</Heading>
-      <Paragraph variant={'SMALL_ASSISTANT'} style={styles.text}>
-        {info}
-      </Paragraph>
+      <View style={styles.paragraphs} >
+        <Paragraph variant={'SMALL_ASSISTANT'} style={styles.text}>
+          {info}
+        </Paragraph>
+      </View>
     </View>
   );
 };

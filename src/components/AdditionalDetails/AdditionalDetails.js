@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   paragraphs: {
-    fontSize: '10px',
+    marginTop: '12px',
   },
 });
 
@@ -57,22 +57,16 @@ export const AdditionalDetails = () => {
     <>
       <View style={styles.section} class="mb-[50px]">
         <Heading variant={'H2'} class="main-titles">Details</Heading>
-        <View>
+        <View style={styles.paragraphs} >
           <Paragraph variant={'SMALL_ASSISTANT'} >
             Varna
           </Paragraph>
-        </View>
-        <View>
           <Paragraph variant={'SMALL_ASSISTANT'} >
             Bulgaria
           </Paragraph>
-        </View>
-        <View>
           <Paragraph variant={'SMALL_ASSISTANT'} >
             0897 865 012
           </Paragraph>
-        </View>
-        <View>
           <Paragraph variant={'SMALL_ASSISTANT'} >
             krasen.dimitrov.vn@gmail.com
           </Paragraph>
@@ -80,31 +74,25 @@ export const AdditionalDetails = () => {
       </View>
 
       <View class="mb-[50px] pr-[20px]">
-        <Heading variant={'H2'}  class="main-titles">Driver license</Heading>
-        <View>
+        <Heading variant={'H2'} class="main-titles">Driver license</Heading>
+        <View style={styles.paragraphs}>
           <Paragraph variant={'SMALL_ASSISTANT'} >B</Paragraph>
         </View>
       </View>
 
       <View class="mb-[50px]">
-        <Heading variant={'H2'}  class="main-titles">Languages</Heading>
-        <View>
+        <Heading variant={'H2'} class="main-titles">Languages</Heading>
+        <View style={styles.paragraphs}>
           <Paragraph variant={'SMALL_ASSISTANT'} >Bulgarian</Paragraph>
-        </View>
-        <View>
           <Paragraph variant={'SMALL_ASSISTANT'} >English</Paragraph>
         </View>
       </View>
 
       <View class="mb-[50px]">
-        <Heading variant={'H2'}  class="main-titles" >Hobbies</Heading>
-        <View>
+        <Heading variant={'H2'} class="main-titles" >Hobbies</Heading>
+        <View style={styles.paragraphs}>
           <Paragraph variant={'SMALL_ASSISTANT'} >Mountain climbing</Paragraph>
-        </View>
-        <View>
           <Paragraph variant={'SMALL_ASSISTANT'} >Music</Paragraph>
-        </View>
-        <View>
           <Paragraph variant={'SMALL_ASSISTANT'} >Puzzle games</Paragraph>
         </View>
       </View>

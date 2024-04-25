@@ -39,11 +39,14 @@ const styles = StyleSheet.create({
 
   sectionLeft: {
     flex: 4,
+    paddingRight: '20px'
     // width: '100%',
     // padding: 10,
   },
   sectionRight: {
     flex: 2,
+    paddingLeft: '40px'
+
     // width: '100%',
     // padding: 10,
   },

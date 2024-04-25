@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
   },
   H3: {
     fontFamily: 'PathwayGothicOne',
-    fontSize: '18px',
+    fontSize: '16px',
   },
 });
 
