@@ -1,6 +1,7 @@
 import React from 'react';
 import './Profile.styles.css';
 import { StyleSheet, Text, View } from '@react-pdf/renderer';
+import { H2, Heading, Paragraph } from '../../UI';
 
 // Define styles for PDF layout
 const styles = StyleSheet.create({
@@ -19,10 +20,10 @@ const styles = StyleSheet.create({
 export const Profile = ({ info }) => {
   return (
     <View style={styles.view}>
-      <Text >Profile</Text>
-      <Text style={styles.text}>
+      <Heading variant={'H2'} >Profile</Heading>
+      <Paragraph variant={'SMALL_ASSISTANT'} style={styles.text}>
         {info}
-      </Text>
+      </Paragraph>
     </View>
   );
 };

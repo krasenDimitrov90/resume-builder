@@ -1,9 +1,12 @@
 export const INFO = {
-  profile: `Motivated and analytical technical professional with a bachelor's
-      degree in power supply and electrical equipment in industry.
-      Possesses excellent computer skills and enjoys working
-      collaboratively to solve complex problems. Has experience working
-      with customers and pays attention to detail.`,
+  profile: `I'm 32 years old. Right now focused on personal growth.
+  You may consider me as an ordinary person, who is not satisfied with little, 
+  wants to know as much as possible, give everithing from him self to make things right`,
+  // profile: `Motivated and analytical technical professional with a bachelor's
+  // degree in power supply and electrical equipment in industry.
+  // Possesses excellent computer skills and enjoys working
+  // collaboratively to solve complex problems. Has experience working
+  // with customers and pays attention to detail.`,
   experience: [
     {
       category: `Education`,

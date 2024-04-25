@@ -1,6 +1,17 @@
 import React from 'react';
 import './Header.styles.css';
-import { Image, StyleSheet, Text, View } from '@react-pdf/renderer';
+import { Font, Image, StyleSheet, Text, View } from '@react-pdf/renderer';
+import { Heading } from '../../UI';
+
+Font.register({
+  family: 'PathwayGothicOne',
+  fonts: [
+    {
+      src: '/fonts/PathwayGothicOne-Regular.ttf',
+      fontWeight: 800,
+    },
+  ]
+});
 
 const styles = StyleSheet.create({
   container: {
@@ -25,7 +36,8 @@ const styles = StyleSheet.create({
     marginLeft: '30px',
   },
   text: {
-    // fontSize: '38px',
+    fontFamily: 'PathwayGothicOne',
+    fontSize: '28px',
   },
 });
 
@@ -36,7 +48,7 @@ export const Header = () => {
         <Image  style={styles.image} src="images/cv-picture.jpg" alt="face" />
       </View>
       <View style={styles.textWrapper}>
-        <Text style={styles.text}>Krasen Dimitrov</Text>
+        <Heading variant={'H1'} >Krasen Dimitrov</Heading>
       </View>
     </View>
   );

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Profile, Experience, AdditionalDetails } from './components/index';
+import { Profile, Experience, AdditionalDetails, Header } from './components/index';
 import { INFO } from './info';
 import { PDFViewer, Document, Page, StyleSheet, View, Svg, Defs, Stop, Rect, RadialGradient } from '@react-pdf/renderer';
 

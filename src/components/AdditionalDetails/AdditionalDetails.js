@@ -1,5 +1,41 @@
-import { StyleSheet, Text, View } from '@react-pdf/renderer';
+import { Font, StyleSheet, View } from '@react-pdf/renderer';
 import React from 'react';
+import { Heading, Paragraph } from '../../UI';
+
+Font.register({
+  family: 'Assistant',
+  src: "https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Lusitana:wght@400;700&display=swap",
+  // fontStyle: 'normal',
+});
+
+Font.register({
+  family: 'PathwayGothicOne',
+  fonts: [
+    {
+      src: '/fonts/PathwayGothicOne-Regular.ttf',
+      fontWeight: 400,
+    },
+  ]
+});
+
+
+Font.register({
+  family: 'Ubuntu',
+  fonts: [
+    {
+      src: 'https://fonts.gstatic.com/s/questrial/v13/QdVUSTchPBm7nuUeVf7EuStkm20oJA.ttf',
+    },
+    {
+      src: 'https://fonts.gstatic.com/s/questrial/v13/QdVUSTchPBm7nuUeVf7EuStkm20oJA.ttf',
+      fontWeight: 'bold',
+    },
+    {
+      src: 'https://fonts.gstatic.com/s/questrial/v13/QdVUSTchPBm7nuUeVf7EuStkm20oJA.ttf',
+      fontWeight: 'normal',
+      fontStyle: 'italic',
+    },
+  ],
+});
 
 const styles = StyleSheet.create({
   section: {
@@ -8,6 +44,8 @@ const styles = StyleSheet.create({
   },
   headers: {
     fontSize: '14px',
+    fontFamily: 'PathwayGothicOne',
+    fontWeight: 'bold',
   },
   paragraphs: {
     fontSize: '10px',
@@ -18,56 +56,56 @@ export const AdditionalDetails = () => {
   return (
     <>
       <View style={styles.section} class="mb-[50px]">
-        <Text style={styles.headers} class="main-titles">Details</Text>
+        <Heading variant={'H2'} class="main-titles">Details</Heading>
         <View>
-          <Text style={styles.paragraphs}>
+          <Paragraph variant={'SMALL_ASSISTANT'} >
             Varna
-          </Text>
+          </Paragraph>
         </View>
         <View>
-          <Text style={styles.paragraphs}>
+          <Paragraph variant={'SMALL_ASSISTANT'} >
             Bulgaria
-          </Text>
+          </Paragraph>
         </View>
         <View>
-          <Text style={styles.paragraphs}>
+          <Paragraph variant={'SMALL_ASSISTANT'} >
             0897 865 012
-          </Text>
+          </Paragraph>
         </View>
         <View>
-          <Text style={styles.paragraphs}>
+          <Paragraph variant={'SMALL_ASSISTANT'} >
             krasen.dimitrov.vn@gmail.com
-          </Text>
+          </Paragraph>
         </View>
       </View>
 
       <View class="mb-[50px] pr-[20px]">
-        <Text style={styles.headers} class="main-titles">Driver license</Text>
+        <Heading variant={'H2'}  class="main-titles">Driver license</Heading>
         <View>
-          <Text style={styles.paragraphs}>B</Text>
+          <Paragraph variant={'SMALL_ASSISTANT'} >B</Paragraph>
         </View>
       </View>
 
       <View class="mb-[50px]">
-        <Text style={styles.headers} class="main-titles">Languages</Text>
+        <Heading variant={'H2'}  class="main-titles">Languages</Heading>
         <View>
-          <Text style={styles.paragraphs}>Bulgarian</Text>
+          <Paragraph variant={'SMALL_ASSISTANT'} >Bulgarian</Paragraph>
         </View>
         <View>
-          <Text style={styles.paragraphs}>English</Text>
+          <Paragraph variant={'SMALL_ASSISTANT'} >English</Paragraph>
         </View>
       </View>
 
       <View class="mb-[50px]">
-        <Text style={styles.headers} class="main-titles">Hobbies</Text>
+        <Heading variant={'H2'}  class="main-titles" >Hobbies</Heading>
         <View>
-          <Text style={styles.paragraphs}>Mountain climbing</Text>
+          <Paragraph variant={'SMALL_ASSISTANT'} >Mountain climbing</Paragraph>
         </View>
         <View>
-          <Text style={styles.paragraphs}>Music</Text>
+          <Paragraph variant={'SMALL_ASSISTANT'} >Music</Paragraph>
         </View>
         <View>
-          <Text style={styles.paragraphs}>Puzzle games</Text>
+          <Paragraph variant={'SMALL_ASSISTANT'} >Puzzle games</Paragraph>
         </View>
       </View>
     </>
