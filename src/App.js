@@ -1,7 +1,7 @@
 import React from 'react';
 import { Profile, Experience, AdditionalDetails, Header } from './components/index';
 import { INFO } from './info';
-import { PDFViewer, Document, Page, StyleSheet, View, Svg, Defs, Stop, Rect, RadialGradient } from '@react-pdf/renderer';
+import { PDFViewer, Document, Page, StyleSheet, View, Svg, Defs, Stop, Rect, RadialGradient, Circle, LinearGradient, Path, Text } from '@react-pdf/renderer';
 
 // Define styles for PDF layout
 const styles = StyleSheet.create({
@@ -11,54 +11,54 @@ const styles = StyleSheet.create({
 
   },
   document: {
-    width: '100%',
-    // display: 'flex',
-    // flexDirection: 'row',
+    // width: '100%',
   },
   page: {
     paddingTop: 35,
-    paddingBottom: 65,
     paddingHorizontal: 35,
-    // flexDirection: 'row',
-    // backgroundColor: 'linear-gradient(to right, pink 0%, pink 50%, blue 50%, blue 100%)',
-    // background: linear - gradient(
-    //   to right,
-    //   pink 0 %,
-    //   pink 50 %,
-    //   paleturquoise 50 %,
-    //   paleturquoise 100 %
-    // ),
-    // padding: 10,
+    paddingBottom: 35,
     backgroundColor: '#ffffff',
   },
   mainSection: {
     flex: 1,
-    // width: '100%',
     flexDirection: 'row',
   },
-
   sectionLeft: {
     flex: 4,
-    paddingRight: '20px'
-    // width: '100%',
-    // padding: 10,
+    paddingRight: '20px',
   },
   sectionRight: {
     flex: 2,
     paddingLeft: '40px'
-
-    // width: '100%',
-    // padding: 10,
   },
+  rightBackgorund: {
+    backgroundColor: '#082A4D',
+    position: 'absolute',
+    zIndex: '-1',
+    top: '0',
+    right: '0',
+    bottom: '0',
+    left: '370px',
+  },
+  fixed: {
+    top: 0,
+    bottom: 0,
+    right: 0,
+    width: '42%',
+    // padding: 10,
+    backgroundColor: '#082A4D',
+    position: 'absolute',
+    zIndex: '-1',
+  }
+
 });
 
 function App() {
+
   return (
     <>
       <PDFViewer style={styles.viewer}>
-
         <Document style={styles.document}>
-
           <Page size="A4" style={styles.page}>
             <View >
               <Header />
@@ -72,6 +72,10 @@ function App() {
                 <AdditionalDetails />
               </View>
             </View>
+            <View style={styles.fixed} fixed>
+            </View>
+            {/* <View style={styles.rightBackgorund}>
+            </View> */}
           </Page>
         </Document>
       </PDFViewer>

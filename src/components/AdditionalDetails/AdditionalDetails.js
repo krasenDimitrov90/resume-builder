@@ -41,6 +41,8 @@ const styles = StyleSheet.create({
   section: {
     paddingTop: '15px',
     paddingBottom: '15px',
+    flex: '1',
+    color: 'white',
   },
   headers: {
     fontSize: '14px',
@@ -54,8 +56,8 @@ const styles = StyleSheet.create({
 
 export const AdditionalDetails = () => {
   return (
-    <>
-      <View style={styles.section} class="mb-[50px]">
+    <View style={styles.section} >
+      <View class="mb-[50px]">
         <Heading variant={'H2'} class="main-titles">Details</Heading>
         <View style={styles.paragraphs} >
           <Paragraph variant={'SMALL_ASSISTANT'} >
@@ -96,6 +98,6 @@ export const AdditionalDetails = () => {
           <Paragraph variant={'SMALL_ASSISTANT'} >Puzzle games</Paragraph>
         </View>
       </View>
-    </>
+    </View>
   );
 };

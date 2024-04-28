@@ -55,6 +55,54 @@ export const INFO = {
       You can logged in with email - try@free.com , password - 123456, or register instead.
       Used technologies - React JS, React Router 6, HTML, SASS, Firebase for the backend.
       Link to the app: https://inventory-app-3f096.web.app/
+      Link to GitHub repository: https://github.com/krasenDimitrov90/inventory-app
+      Web Application, where you can create and share repositories.
+      Every repository contain items and has two sections - all items, and expiring items.
+      If the quantity of a item is less than the preset value, it goes to expiring items.
+      Users can share their repositories to each other, so everyone who has access can manage the repositorie.
+      You can logged in with email - try@free.com , password - 123456, or register instead.
+      Used technologies - React JS, React Router 6, HTML, SASS, Firebase for the backend.
+      Link to the app: https://inventory-app-3f096.web.app/
+      Link to GitHub repository: https://github.com/krasenDimitrov90/inventory-app
+      Web Application, where you can create and share repositories.
+      Every repository contain items and has two sections - all items, and expiring items.
+      If the quantity of a item is less than the preset value, it goes to expiring items.
+      Users can share their repositories to each other, so everyone who has access can manage the repositorie.
+      You can logged in with email - try@free.com , password - 123456, or register instead.
+      Used technologies - React JS, React Router 6, HTML, SASS, Firebase for the backend.
+      Link to the app: https://inventory-app-3f096.web.app/
+      Link to GitHub repository: https://github.com/krasenDimitrov90/inventory-app
+      Web Application, where you can create and share repositories.
+      Every repository contain items and has two sections - all items, and expiring items.
+      If the quantity of a item is less than the preset value, it goes to expiring items.
+      Users can share their repositories to each other, so everyone who has access can manage the repositorie.
+      You can logged in with email - try@free.com , password - 123456, or register instead.
+      Used technologies - React JS, React Router 6, HTML, SASS, Firebase for the backend.
+      Link to the app: https://inventory-app-3f096.web.app/
+      Link to GitHub repository: https://github.com/krasenDimitrov90/inventory-app
+      Web Application, where you can create and share repositories.
+      Every repository contain items and has two sections - all items, and expiring items.
+      If the quantity of a item is less than the preset value, it goes to expiring items.
+      Users can share their repositories to each other, so everyone who has access can manage the repositorie.
+      You can logged in with email - try@free.com , password - 123456, or register instead.
+      Used technologies - React JS, React Router 6, HTML, SASS, Firebase for the backend.
+      Link to the app: https://inventory-app-3f096.web.app/
+      Link to GitHub repository: https://github.com/krasenDimitrov90/inventory-app
+      Web Application, where you can create and share repositories.
+      Every repository contain items and has two sections - all items, and expiring items.
+      If the quantity of a item is less than the preset value, it goes to expiring items.
+      Users can share their repositories to each other, so everyone who has access can manage the repositorie.
+      You can logged in with email - try@free.com , password - 123456, or register instead.
+      Used technologies - React JS, React Router 6, HTML, SASS, Firebase for the backend.
+      Link to the app: https://inventory-app-3f096.web.app/
+      Link to GitHub repository: https://github.com/krasenDimitrov90/inventory-app
+      Web Application, where you can create and share repositories.
+      Every repository contain items and has two sections - all items, and expiring items.
+      If the quantity of a item is less than the preset value, it goes to expiring items.
+      Users can share their repositories to each other, so everyone who has access can manage the repositorie.
+      You can logged in with email - try@free.com , password - 123456, or register instead.
+      Used technologies - React JS, React Router 6, HTML, SASS, Firebase for the backend.
+      Link to the app: https://inventory-app-3f096.web.app/
       Link to GitHub repository: https://github.com/krasenDimitrov90/inventory-app`
         },
         {
@@ -107,6 +155,7 @@ export const INFO = {
           period: `DECEMBER 2022 - FEBRUARI 2023`,
           description: '',
         },
+        
       ]
     },
   ],
